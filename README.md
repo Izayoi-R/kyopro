@@ -16,5 +16,5 @@
       自分の環境で使うときはコード内で指定しているファイル名などを適宜変更してください。
 
 # Library
-  check.py / generate.py / score.cpp は上述したマラソンコンテスト用のファイルです。  
+  check.py / generate.py / generate.cpp / score.cpp は上述したマラソンコンテスト用のファイルです。  
   他は普通のライブラリです。
