@@ -59,6 +59,7 @@ int main(){
         int ac=0,wa=0 ;
         ll sum = 0 ;
         for(int i=1;;i++){
+            // in/outフォルダの名前をhogeフォルダに変更した場合は"hoge\\～"に変更する
             string in = "in\\"+to_string(i)+".txt" ;
             string out = "out\\"+to_string(i)+".txt" ;
             bool ok = true ;
@@ -86,6 +87,7 @@ int main(){
         cout << "The number of cases you want to check : " ;
         cin >> num ;
         for(int i=1;i<=num;i++){
+            // in/outフォルダの名前をhogeフォルダに変更した場合は"hoge\\～"に変更する
             string in = "in\\"+to_string(i)+".txt" ;
             string out = "out\\"+to_string(i)+".txt" ;
             ll res = score(in,out) ;
