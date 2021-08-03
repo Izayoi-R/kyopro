@@ -77,13 +77,15 @@ int main(){
                 break ;
             }
         }
+        cout << endl ;
         cout << ac+wa << " cases are checked." << endl ;
         cout << "AC       : " << ac << endl ;
         cout << "WA       : " << wa << endl ;
         cout << "Score    : " << sum << endl ;
         cout << "Score(%) : " << (ac?100.0*sum/ac/max_score:-1) << endl ;
     }else{
-        int num ;
+        int num,ac=0,wa=0 ;
+        ll sum = 0 ;
         cout << "The number of cases you want to check : " ;
         cin >> num ;
         for(int i=1;i<=num;i++){
@@ -95,7 +97,18 @@ int main(){
             cout << "Case " << i << " : " << (res>=0?"AC":"WA") << endl ;
             cout << "   Score    : " << (res>=0?res:-1) << endl ;
             cout << "   Score(%) : " << 100.0*res/max_score << endl ;
+            if(res<0) wa++ ;
+            else{
+                ac++ ;
+                sum += res ;
+            }
         }
+        cout << endl ;
+        cout << ac+wa << " cases are checked." << endl ;
+        cout << "AC       : " << ac << endl ;
+        cout << "WA       : " << wa << endl ;
+        cout << "Score    : " << sum << endl ;
+        cout << "Score(%) : " << (ac?100.0*sum/ac/max_score:-1) << endl ;
     }
 }
 

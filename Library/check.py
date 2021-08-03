@@ -12,6 +12,8 @@ if s=='Y' or s=='y' or s=='Yes' or s=='YES':
         if os.path.isfile(in_file):
             # mainとなる実行ファイルがrun.exeじゃなくてhoge.exeの場合、"run < " -> "hoge < "に変更
             subprocess.call("run < "+in_file+" > "+out_file,shell=True)
+            if i%10==0:
+                print(str(i)+" cases is done.")
         else:
             break
         i += 1
