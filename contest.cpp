@@ -17,7 +17,6 @@ int main(){
         {"a.cpp","b.cpp","c.cpp","d.cpp","e.cpp","f.cpp","g.cpp","h.cpp"},
         {"a.cpp","b.cpp","c.cpp","d.cpp"},
         {"a.cpp","b.cpp","c.cpp","d.cpp"},
-        {"run.cpp","score.cpp"}
     } ;
     cout << "ABC -> 0\nARC -> 1\nAGC -> 2\nmarathon -> 3\nother -> 4\n" << endl ;
     cout << "Choose contest type: " ; 
@@ -81,5 +80,6 @@ int main(){
         f("generate.cpp") ;
         f("score.cpp") ;
         f("check.py") ;
+        f("run.cpp") ;
     }
 }
