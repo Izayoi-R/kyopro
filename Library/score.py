@@ -7,7 +7,9 @@ def score(in_file,out_file):
     output = out_file.readline
     # ここから下にスコア算出のコードを書く
     # 入力ケースはinput()で1行受け取れる
+    # 例）num = int(input())
     # 出力ケースはoutput()で1行受け取れる
+    # 例）a = int(output())
     # 不適な出力ケースの場合、WAとして負数を返す
     
     res = -1
