@@ -53,7 +53,7 @@ int main(){
     _mkdir(folder.c_str()) ;
     folder += "\\" ;
     ofstream write ;
-    for(auto s:files[type]){
+    if(type!=3) for(auto s:files[type]){
         name = folder+s ;
         cout << name << endl ;
         write.open(name) ;
